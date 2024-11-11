@@ -61,3 +61,6 @@ Some file_paths have to be changed in order to make it work:
 
 ### Run inference
 To run inference, follow the instructions in the inference_instructions.txt-file.
+
+### Compute metrics
+To compute evaluation metrics, the file compute_metrics.py can be used. Instructions are given in the file. 
