@@ -11,7 +11,7 @@ To run inference with the models, the nnUNetv2-repository has to be cloned. Plea
 https://github.com/mathildefaanes/nnUNet/blob/master/documentation/installation_instructions.md 
 
 ### Add custom trainer
-When the nnUNetv2-repository is cloned, a custom trainer has to be added in order for the inference to work. Download the nnUNetTrainerWithESandDA5.py-file and place it here:
+When the nnUNetv2-repository is cloned, a custom trainer has to be added to run inference with the models. This custom trainer was used for training of the models and is identical to the nnUNetTrainerDA5-trainer, but it has early stopping. Download the nnUNetTrainerWithESandDA5.py-file and place it here:
 
 /PATH_TO_/nnUNet/nnunetv2/training/nnUNetTrainer/nnUNetTrainerWithESandDA5.py
 
@@ -29,7 +29,27 @@ Set them as enviromantal variabels by:
 or by following the instructions from nnUNet: https://github.com/mathildefaanes/nnUNet/blob/master/documentation/setting_up_paths.md
 
 ### Download model-files
-The necassary model-files to run inference can be found under Releases. Download the zip-file of the model you want to test and un-zip the folder. Place it inside your nnUNet_results folder. 
+The necassary model-files to run inference can be found under Releases. Download the zip-file of the model you want to test and un-zip the folder. Place it inside your nnUNet_results folder. The zip-file contains the following files:
+
+    Dataset50X_MODELNAME/
+    ├── inference_information.json
+    ├── inference_instructions.txt
+    ├── postprocessing.json
+    ├── postprocessing.pkl
+    └── nnUNetTrainerWithESandDA5__nnUNetPlans__2d
+    │   ├── dataset.json
+    │   ├── plans.json
+    │   ├── fold_0
+    │   │   └── checkpoint_best.pth
+    │   ├── fold_1
+    │   │   └── checkpoint_best.pth
+    │   ├── fold_2
+    │   │   └── checkpoint_best.pth
+    │   ├── fold_3
+    │   │   └── checkpoint_best.pth
+    │   └── fold_4
+    │   │   └── checkpoint_best.pth    
+
 
 ### Modify file_paths
 Some file_paths have to be changed in order to make it work:
