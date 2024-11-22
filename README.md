@@ -1,7 +1,7 @@
 # Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations
 
 The repository contains necessary files to run inference with the main models from the article: "Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations". 
-The models are trained with nnUNet and nnUNet is required in order to run inference with this models. 
+The models are trained with nnU-Net and nnU-Net is required in order to run inference with this models. 
 
 
 
@@ -15,7 +15,7 @@ When the nnUNetv2-repository is cloned, a custom trainer has to be added to run 
 
 /PATH_TO_/nnUNet/nnunetv2/training/nnUNetTrainer/nnUNetTrainerWithESandDA5.py
 
-### Create necessary folder and set environment variables 
+### Create necessary folders and set environment variables 
 Create the following folders and place them where you want:
 - nnUNet_results
 - nnUNet_raw
