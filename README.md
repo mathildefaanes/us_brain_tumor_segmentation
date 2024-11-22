@@ -1,17 +1,17 @@
 # Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations
 
 The repository contains necessary files to run inference with the main models from the article: "Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations". 
-The models are trained with nnU-Net and nnU-Net is required in order to run inference with this models. 
+The models are trained with nnU-Net and the nnU-Net framework is necessary to run inference with these models. 
 
 
 
 ## How to use
-### Clone nnUNet
-To run inference with the models, the nnUNetv2-repository has to be cloned. Please follow the installation guide from nnUNet if not yet installed (the option ii.b has to be followed):
+### Clone nnU-Net
+To run inference with the models, the nnUNetv2-repository has to be cloned. Please follow the installation guide from nnU-Net if not yet installed (the option ii.b must be followed):
 https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/installation_instructions.md
 
 ### Add custom trainer
-When the nnUNetv2-repository is cloned, a custom trainer has to be added to run inference with the models. This custom trainer was used for training of the models and is identical to the nnUNetTrainerDA5-trainer, but it has early stopping. Download the nnUNetTrainerWithESandDA5.py-file and place it here:
+Once the nnUNetv2-repository is cloned, a custom trainer must be added to run inference with the models. This custom trainer was used when training the models and is identical to the nnUNetTrainerDA5-trainer, but includes early stopping. Download the nnUNetTrainerWithESandDA5.py-file and place it here:
 
 /PATH_TO_/nnUNet/nnunetv2/training/nnUNetTrainer/nnUNetTrainerWithESandDA5.py
 
@@ -21,7 +21,7 @@ Create the following folders and place them where you want:
 - nnUNet_raw
 - nnUNet_preprocessed
 
-Set them as enviromantal variabels by:
+Set them as environment variables with the following command lines:
 - export nnUNet_results="/PATH_TO/nnUNet_results"
 - export nnUNet_raw="/PATH_TO/nnUNet_raw"
 - export nnUNet_preprocessed="/PATH_TO/nnUNet_preprocessed"
@@ -52,7 +52,7 @@ The necessary model-files to run inference can be found under Releases. Download
 
 
 ### Modify file_paths
-Some file_paths have to be changed in order to make it work:
+Some file paths must be changed to make it work:
 
 - inference_information.json
     - modify path for:
@@ -63,10 +63,10 @@ Some file_paths have to be changed in order to make it work:
 To run inference, follow the instructions in the inference_instructions.txt-file.
 
 ### Compute metrics
-To compute evaluation metrics, the file compute_metrics.py can be used. Instructions are given in the file. 
+To compute evaluation metrics, the compute_metrics.py file can be used. Instructions are given in the file. 
 
 ## Citing
-Please cite the following article:
+Please cite the following article if used:
 
     @misc{faanes2024automaticbraintumorsegmentation,
           title={Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations}, 
