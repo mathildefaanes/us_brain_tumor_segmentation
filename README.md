@@ -16,7 +16,7 @@ When the nnUNetv2-repository is cloned, a custom trainer has to be added to run 
 /PATH_TO_/nnUNet/nnunetv2/training/nnUNetTrainer/nnUNetTrainerWithESandDA5.py
 
 ### Create necessary folder and set environment variables 
-Create the following folders where you want:
+Create the following folders and place them where you want:
 - nnUNet_results
 - nnUNet_raw
 - nnUNet_preprocessed
