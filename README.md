@@ -86,3 +86,14 @@ Please cite the [following paper](https://www.google.com/url?q=https://www.natur
 
     Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring 
     method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+
+The metrics are computed using the following paper: 
+
+    @article{jia2024seg,
+      title={seg-metrics: a Python package to compute segmentation metrics},
+      author={Jia, Jingnan and Staring, Marius and Stoel, Berend C},
+      journal={medRxiv},
+      pages={2024--02},
+      year={2024},
+      publisher={Cold Spring Harbor Laboratory Press}
+    }
