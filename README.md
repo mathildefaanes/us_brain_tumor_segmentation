@@ -8,7 +8,7 @@ The models are trained with nnUNet and nnUNet is required in order to run infere
 ## How to use
 ### Clone nnUNet
 To run inference with the models, the nnUNetv2-repository has to be cloned. Please follow the installation guide from nnUNet if not yet installed (the option ii.b has to be followed):
-https://github.com/mathildefaanes/nnUNet/blob/master/documentation/installation_instructions.md 
+https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/installation_instructions.md
 
 ### Add custom trainer
 When the nnUNetv2-repository is cloned, a custom trainer has to be added to run inference with the models. This custom trainer was used for training of the models and is identical to the nnUNetTrainerDA5-trainer, but it has early stopping. Download the nnUNetTrainerWithESandDA5.py-file and place it here:
@@ -26,7 +26,7 @@ Set them as enviromantal variabels by:
 - export nnUNet_raw="/PATH_TO/nnUNet_raw"
 - export nnUNet_preprocessed="/PATH_TO/nnUNet_preprocessed"
 
-or by following the instructions from nnUNet: https://github.com/mathildefaanes/nnUNet/blob/master/documentation/setting_up_paths.md
+or by following the instructions from nnUNet: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/setting_up_paths.md
 
 ### Download model-files
 The necassary model-files to run inference can be found under Releases. Download the zip-file of the model you want to test and un-zip the folder. Place it inside your nnUNet_results folder. The zip-file contains the following files:
