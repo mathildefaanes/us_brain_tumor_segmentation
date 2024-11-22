@@ -1,6 +1,6 @@
 # Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations
 
-The repository contains nessecary files to run inference with the main models from the article: "Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations". 
+The repository contains necessary files to run inference with the main models from the article: "Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations". 
 The models are trained with nnUNet and nnUNet is required in order to run inference with this models. 
 
 
