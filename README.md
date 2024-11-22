@@ -1,6 +1,6 @@
 # Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations
 
-The repository contains nessecary files to run inference with the main models from the article: "Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations". 
+The repository contains necessary files to run inference with the main models from the article: "Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations". 
 The models are trained with nnUNet and nnUNet is required in order to run inference with this models. 
 
 
@@ -29,7 +29,7 @@ Set them as enviromantal variabels by:
 or by following the instructions from nnUNet: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/setting_up_paths.md
 
 ### Download model-files
-The necassary model-files to run inference can be found under Releases. Download the zip-file of the model you want to test and un-zip the folder. Place it inside your nnUNet_results folder. The zip-file contains the following files:
+The necessary model-files to run inference can be found under Releases. Download the zip-file of the model you want to test and un-zip the folder. Place it inside your nnUNet_results folder. The zip-file contains the following files:
 
     Dataset50X_MODELNAME/
     ├── inference_information.json
@@ -64,3 +64,25 @@ To run inference, follow the instructions in the inference_instructions.txt-file
 
 ### Compute metrics
 To compute evaluation metrics, the file compute_metrics.py can be used. Instructions are given in the file. 
+
+## Citing
+Please cite the following article:
+
+    @misc{faanes2024automaticbraintumorsegmentation,
+          title={Automatic brain tumor segmentation in 2D intra-operative ultrasound images using MRI tumor annotations}, 
+          author={Mathilde Faanes and Ragnhild Holden Helland and Ole Solheim and Ingerid Reinertsen},
+          year={2024},
+          eprint={2411.14017},
+          archivePrefix={arXiv},
+          primaryClass={eess.IV},
+          url={https://arxiv.org/abs/2411.14017}, 
+    }
+
+## Acknowledgements
+The models are trained using nnU-Net, the repository can be found here:
+- https://github.com/MIC-DKFZ/nnUNet/tree/master
+
+Please cite the [following paper](https://www.google.com/url?q=https://www.nature.com/articles/s41592-020-01008-z&sa=D&source=docs&ust=1677235958581755&usg=AOvVaw3dWL0SrITLhCJUBiNIHCQO) when using nnU-Net:
+
+    Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring 
+    method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
